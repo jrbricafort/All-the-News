@@ -54,9 +54,7 @@ $(".delete").on("click", function () {
 $(".addNote").on("click", function () {
 	// alert("nice")
 	var articleId = $(this).attr("data-id");
-	if (!$("#noteText" + articleId).val()) {
-		alert("please enter a note to save")
-	} else {
+	if (!$("#noteText") + articleId.val()) {
 		$.ajax({
 			method: "POST",
 			url: "/notes",
@@ -70,6 +68,9 @@ $(".addNote").on("click", function () {
 			$(".modalNote").modal("hide");
 			window.location = "/saved"
 		});
+	}
+	else {
+		alert("please enter a note to save")
 	}
 });
 
