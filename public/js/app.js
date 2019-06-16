@@ -87,9 +87,5 @@ $(".deleteNote").on("Click", function () {
 });
 
 $("#empty").on("click", function () {
-	console.log("testing")
-	//$(".panel panel-default").text("");
-	// $(".panel-body").text("");
-	// $(".panel-heading").text("");
-	$(".col-md-12").text("");
+	$("#scrapedThings").text("Scrape Some Articles!");
 })
