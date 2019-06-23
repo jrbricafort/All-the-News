@@ -52,7 +52,7 @@ $(".delete").on("click", function () {
 });
 
 $(".addNote").on("click", function () {
-	// alert("nice")
+	alert("nice")
 	var articleId = $(this).attr("data-id");
 	if (!$("#noteText") + articleId.val()) {
 		$.ajax({
